@@ -1,28 +1,40 @@
-@background: url("http://www.myfreetextures.com/wp-content/uploads/2011/06/another-rough-old-and-worn-parchment-paper.jpg") no-repeat center center;
-@background-color: #edebd7
+//variables
+
+@parchment: url('http://www.myfreetextures.com/wp-content/uploads/2011/06/another-rough-old-and-worn-parchment-paper.jpg') no-repeat center center;
+@tan: #edebd7;
+
+.bodysize{ height: 100vh;
+           width: 100%;
+}
 
 *{
 	padding: 0;
 	margin: 0;
 }
+
 body{
 	background: black;
+  .bodysize;
 }
+
 header{
-	height: 100vh;
-	width: 100%;
- 	background: /images/pink-orb.jpg;
+  .bodysize;
+ 	background: url('http://cdn.playbuzz.com/cdn/f4b6d7b3-4268-43a4-8a46-85e1697e218f/b229eb7d-48d8-414c-8bf4-0782a79c2e57.jpg') no-repeat center center;
 }
+
 
 .landing-text h2{
 	font-size: 35px;
 	font-family: 'Lato', sans-serif;
-
 }
+header .landing-text h2 span:hover{
+  color: blue;
+}
+
 header .landing-text h1 span:hover{
 	color: pink;
-
 }
+
 .landing-text{
 	color: #e4dee8;
 	text-align: center;
@@ -33,15 +45,13 @@ header .landing-text h1 span:hover{
 
 
 #orbs{
-	background: @background;
-	background-color: @background-color;
-	height: 100vh;
-	width: 100%;
+	background: @parchment;
+	background-color: @tan;
+  .bodysize;
 }
 
 #players{
-	background: @background;
-	background-color: @background-color;
-	height: 100vh;
-	width: 100%;
+	background: @parchment;
+	background-color: @tan;
+  .bodysize;
 }

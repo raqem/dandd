@@ -1,0 +1,39 @@
+//variables
+
+@purple: #7E57A8;
+@fire-red: #B02017;
+@orange: #E95726;
+@scales: #110101;
+@black: #0B0704;
+@light: #6F6160;
+
+@demon: url('https://www.walldevil.com/wallpapers/a92/demon-fantasy-fire-wallpaper-monster-wallpapers.jpg')
+
+.bodysize { height: 100vh;
+           width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header body {
+  background: @black;
+}
+
+header {
+  background: @demon;
+  .bodysize;
+}
+
+h1 {
+  color: @light;
+  font-size: 56px;
+  font-family: 'Acme';
+
+  &:hover {
+    color: @fire-red;
+    font-size: 64px;
+    }
+}
