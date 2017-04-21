@@ -16,34 +16,53 @@ html, body{
   height: 100%;
 }
 
+
 body{
-	background: black;
+	background: @white;
 
 }
 nav{
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 
+}
+
+
+.pic{
+  height: 100%;
+  background-color: @dark;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .intro{
     .bodysize;
-  background-image: url('http://cdn.playbuzz.com/cdn/f4b6d7b3-4268-43a4-8a46-85e1697e218f/b229eb7d-48d8-414c-8bf4-0782a79c2e57.jpg') no-repeat center center;
-  background-size: cover;
-	color: @white;
+
+	background-image: url('../images/pp-demon.jpg');
+  color: @white;
 	text-align: center;
-	padding: 160px 0px;
+	padding: 0px 0px;
 	font-size: 50px;
 	font-family: 'Acme', sans-serif;
 
-  h1 span:hover{
+  h1{
+    padding-top: 5px;
+  }
+   span:hover{
     color: @light;
   }
   h2{
   font-size: 35px;
   font-family: 'Lato', sans-serif;
-  }
-  h2 span:hover{
+  padding-top: 250px;
+
+   h2 span:hover{
     color: @mid;
   }
+ }
 }
 
 h3{
@@ -53,21 +72,24 @@ h3{
     padding-top: 0;
   }
 
-.words{
-  hight: 50%;
-  background-color: @white;
+.orbs{
+  background-image: url('../images/magical_orb.png')
 }
-.pic{
-  height: 100%;
-  background-color: @dark;
+
+.heros{
+  background-image: url('../images/young-hero.jpg')
+}
+.words{
+  height: 50%;
+  background-color: @white;
 }
 
 p{
-  color: @light;
+  color: @mid;
   font-size: 24px;
   font-family: 'Lato';
   max-width: 600px;
-  margin: 15px auto 20px;
+  margin: 25px auto 20px;
   text-align: center;
 
 }
